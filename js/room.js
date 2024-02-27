@@ -44,7 +44,6 @@ let expandVideoFrame = (e) => {
 
   let child = displayFrame.children[0];
   if (child) {
-    //it will be removed from the location
     document.getElementById('streams__container').appendChild(child); // move stream to streams container 
   }
 

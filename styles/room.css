@@ -100,6 +100,11 @@
   margin: 1em;
 }
 
+.right-message {
+  margin-left: auto;
+}
+
+
 .message__body {
   background-color: #363739;
   border-radius: 10px;
@@ -123,7 +128,10 @@
 .message__author {
   margin-right: 10px;
   color: #2aca3e !important;
+}
 
+.right-message .message__author {
+  color: rgb(224, 58, 224) !important
 }
 
 .message__author__bot {
@@ -213,7 +221,7 @@
   height: 300px;
   width: 300px;
 
-  background-image: url("/images/logo.png");
+  background-image: url("/images/jbee_logo.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 75px;
@@ -239,6 +247,10 @@
 
 
 @media (max-width: 1200px) {
+  #stream__box {
+    height: 250px;
+  }
+
   #members__container {
     display: none;
   }
@@ -308,7 +320,7 @@
   background-color: #1a1a1a60;
   padding: 1rem;
   left: 50%;
-  display: flex;
+  display: none;
   gap: 1rem;
   transform: translateX(-50%);
 }
@@ -345,4 +357,18 @@
 .shrink-video {
   height: 100px;
   width: 100px;
+}
+
+#join-btn {
+  background-color: #845695;
+  font-size: 18px;
+  padding: 25px 50px;
+  border: none;
+  color: white;
+  position: fixed;
+  bottom: 1rem;
+  border-radius: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
 }

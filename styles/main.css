@@ -149,7 +149,7 @@ a {
   border: none;
 }
 
-#members__button:hover svg > path,
+#members__button:hover svg>path,
 #chat__button:hover svg,
 .nav__link:hover svg {
   fill: #845695;
@@ -169,6 +169,7 @@ a {
     width: 1.5rem;
     height: 1.5rem;
   }
+
   .nav__link,
   #create__room__btn {
     font-size: 0;
@@ -184,4 +185,8 @@ a {
   #create__room__btn:hover {
     background-color: transparent;
   }
+}
+
+.logo-style {
+  border-radius: 10px;
 }
